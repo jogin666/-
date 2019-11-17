@@ -7,8 +7,8 @@
 	  将待插入的元素temp，逐个与已排好序的元素比较，将所有大于temp的元素分别往后移动一位。	
 	*/
 	public void  insert(int[] array){
-        int len=array.length;
-        for(int i=1;i<len;i++){
+       	    int len=array.length;
+  	    for(int i=1;i<len;i++){
             int temp=array[i];
             int index=i;
             for(int j=i-1;j>=0 && temp<=array[j];j--){  //往前扫描，将大于temp的数值后移一位
