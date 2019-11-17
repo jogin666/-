@@ -4,18 +4,18 @@
 
 ```java
 	public void select(int[] array){
-		int len=aray.length;
-		int index,temp;
-		for(int i=0;i<len-1;i++){
-			index=i;
-			for(int j=i+1;j<len;j++){
-				if(array[index]>array[j])	//选择最小值的下标
-					index=j;
-			}
-			temp=array[i];
-			array[i]=array[index];
-			array[index]=temp;
-		}
+	    int len=aray.length;
+	    int index,temp;
+	    for(int i=0;i<len-1;i++){
+		index=i;
+		for(int j=i+1;j<len;j++){
+		    if(array[index]>array[j])	//选择最小值的下标
+			index=j;
+		    }
+		    temp=array[i];
+		    array[i]=array[index];
+		    array[index]=temp;
+	    }
 	}
 ```
 
@@ -30,16 +30,16 @@
 ```java
 	public void compareSwap(int[] array){
 	
-		int len=array.length;
-		for(int i=0;i<len-1;i++){
-			for(int j=i+1;j<len;j++){
-				if(array[i]>array[j]){		//大于交换
-					int temp=array[i];
-					array[i]=array[j];
-					array[j]=temp;
-				}
-			}
+	    int len=array.length;
+	    for(int i=0;i<len-1;i++){
+		for(int j=i+1;j<len;j++){
+		    if(array[i]>array[j]){		//大于交换
+			int temp=array[i];
+			array[i]=array[j];
+			array[j]=temp;
+	 	    }
 		}
+	    }
 	}
 ```
 
